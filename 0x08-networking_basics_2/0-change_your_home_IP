@@ -1,0 +1,9 @@
+#!/usr/bin/env bash
+
+# Define the IP addresses
+localhost_ip="127.0.0.2"
+facebook_ip="8.8.8.8"
+
+# Modify /etc/hosts to configure DNS resolution
+sed -i "s/127.0.0.1.*/$localhost_ip localhost/" /etc/hosts
+echo "$facebook_ip facebook.com" | sudo tee -a /etc/hosts
