@@ -1,5 +1,6 @@
 # Networking Basics
-Networking allows errorless communication between computers
+Networking allows errorless communication between computers.
+
 In this project, I am introduced to the foundational networking concepts.
 These include:
 - The OSI model
