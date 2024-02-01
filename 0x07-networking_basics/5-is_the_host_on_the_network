@@ -1,0 +1,10 @@
+#!/usr/bin/env bash
+
+SCRIPT_NAME="5-is_the_host_on_the_network"
+if [ "$#" -ne 1 ]; then
+	echo "Usage: $SCRIPT_NAME {IP_ADDRESS}"
+	exit 1
+fi
+IP=$1
+COUNT=5
+ping -n $COUNT $IP
