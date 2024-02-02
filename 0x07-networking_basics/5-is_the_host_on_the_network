@@ -1,12 +1,9 @@
 #!/usr/bin/env bash
 # Pings an IP address received as a string 5 times.
 
-SCRIPT_NAME="5-is_the_host_on_the_network"
 if [ "$#" -eq 0 ]
 then
-	echo "Usage: $SCRIPT_NAME {IP_ADDRESS}"
-
+	echo "Usage: 5-is_the_host_on_the_network {IP_ADDRESS}"
 else
-IP=$1
-ping -n 5 $IP
+ping -n 5 "$5"
 fi
