@@ -4,6 +4,10 @@
 localhost_ip="127.0.0.2"
 facebook_ip="8.8.8.8"
 
-# Modify /etc/hosts to configure DNS resolution
-sed -i "s/127.0.0.1.*/$localhost_ip localhost/" /etc/hosts
-echo "$facebook_ip facebook.com" | sudo tee -a /etc/hosts
+# Modify the /etc/hosts file
+cp /etc/hosts new_hosts
+
+sed -i "s/127.0.0.1.*/$localhost_ip localhost/" new_hosts
+echo "$facebook_ip facebook.com" >> new_hosts
+
+cp new_hosts /etc/hosts
