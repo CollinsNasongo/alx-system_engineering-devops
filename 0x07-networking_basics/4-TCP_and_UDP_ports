@@ -1,4 +1,0 @@
-#!/usr/bin/env bash
-# The l flag only shows listening ports
-# the p flag displays PID/Program name for sockets
-netstat -lp
